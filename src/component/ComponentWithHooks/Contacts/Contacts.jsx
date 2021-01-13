@@ -32,7 +32,11 @@ const Contactsss =(props)=>{
 
 
 
+
 {props=><div style={props} className="Container-Contact1__tittle"> <h1>КОМАНДАa77 A&M</h1></div>}
+
+
+
 
     
     </Spring>
