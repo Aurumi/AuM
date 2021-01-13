@@ -33,7 +33,7 @@ const Contactsss =(props)=>{
 
 
 
-{props=><div style={props} className="Container-Contact1__tittle"> <h1>КОМАНДА A&M</h1></div>}
+{props=><div style={props} className="Container-Contact1__tittle"> <h1>КОМАНДАa A&M</h1></div>}
 
 
 
