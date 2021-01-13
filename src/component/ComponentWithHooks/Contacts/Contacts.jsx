@@ -29,7 +29,11 @@ const Contactsss =(props)=>{
 
     
     <Spring from={{transform:"translateX(-500px)"}} to={{transform:"translateX(0px)"}}>
+<<<<<<< HEAD
 {props=><div style={props} className="Container-Contact1__tittle"> <h1>КОМАНДАa1 A&M</h1></div>}
+=======
+{props=><div style={props} className="Container-Contact1__tittle"> <h1>КОМАНДАa12 A&M</h1></div>}
+>>>>>>> c8edca4b55ba52ef8fee7d5ad7275a553dff5e35
     
     </Spring>
 
