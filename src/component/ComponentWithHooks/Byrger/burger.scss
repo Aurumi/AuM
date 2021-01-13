@@ -1,0 +1,193 @@
+
+
+
+
+.Burger{
+    display:none;
+    margin-left: 50px;
+    z-index: 999;
+}
+
+
+.cross{
+    margin: 0 auto;
+
+
+    
+
+}
+
+
+
+
+
+
+
+.burger__row{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    // position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: pink;
+    align-items: center;
+}
+
+.burger__list{
+   display: flex;
+   position: absolute;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 120px;
+   background-color: pink;
+   width: 100%;
+   height: 200px;
+    
+   li{
+       margin-top: 15px;
+   }
+    
+    
+}
+
+.burger__link{
+    
+    text-align: center;
+display: block;
+
+        li:hover{
+            color:white;
+            text-shadow: black 0 0 10px;
+        }
+}
+
+@media (min-width:767px){
+    .Burger-active{
+       display: none;
+    }
+}
+
+@media (max-width:770px){
+    .Burger{
+        
+        display: block;
+        position: relative;
+        width:30px;
+        height:20px;
+        color:white;
+    }
+    
+
+    .Burger:before,.Burger:after{
+        content:'';
+        background-color: white;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        transition: all 0.3s ease 0s;
+
+    }
+
+
+    
+
+    .Burger:before{
+        top:0;
+    }
+
+  
+
+    .Burger:after{
+        bottom: 0;
+    }
+
+    
+    .Burger span{
+        position: absolute;
+        background-color: white;
+        left:0;
+        width: 100%;
+        height: 2px;
+        top: 9px;
+    }
+
+   
+    
+
+    .burger__list{
+        display: inline-block;
+    }
+
+}
+
+
+
+.Burger-active{
+    margin-top: 220px;
+    position: fixed;
+    background-color: black;
+    color:white;
+    width: 100%;
+    height: 300px;
+    // display: none;
+    
+}
+
+.Burger-active__List{
+    
+   margin-top: 100px;
+    
+    
+   
+    
+    
+    
+    }
+
+.Burger-active__row{
+font-size: 25px;
+margin: 0 auto;
+width: 190px;
+display: flex;
+flex-direction: column;
+
+justify-content: center;
+
+   
+.links{
+        color:white;
+    margin-bottom:15px ;
+
+    
+    
+}
+
+}
+
+.links a{
+    color:white
+}
+.links a:hover{
+    color: gold;
+   
+}
+
+.cross{
+    span{
+        transform: scale(0);
+        
+    }
+}
+
+.cross:before{
+    transform: rotate(45deg);
+   margin-top:9px;
+
+}
+
+.cross:after{
+    transform:rotate(-45deg);
+    margin-bottom:9px;
+}

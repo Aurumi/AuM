@@ -1,0 +1,25 @@
+.Shop-cards__item {
+  flex: 0 1 25%;
+}
+
+.Shop-cards__item .Shop-cards__text {
+  margin-top: 15px;
+}
+
+.Shop-cards__item .Shop-cards__text p {
+  padding-top: 5px;
+}
+
+.Shop-cards__item .Shop-cards__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 150px;
+  height: 30px;
+  background-color: black;
+  color: white;
+}
+/*# sourceMappingURL=cards.css.map */

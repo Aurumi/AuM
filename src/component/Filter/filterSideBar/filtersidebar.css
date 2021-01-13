@@ -1,0 +1,50 @@
+.filter-side-bar {
+  background-color: white;
+  width: 300px;
+  height: 500px;
+  position: fixed;
+  z-index: 4;
+  right: 0px;
+  top: 60px;
+  overflow: auto;
+  color: black;
+  padding: 5px;
+}
+
+.filter-side-bar .filter-side-bar__tittle {
+  display: block;
+  color: black;
+  font-size: 30px;
+}
+
+.ull li {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.radio-box {
+  margin-top: 20px;
+}
+
+.radio-box label {
+  margin-left: 50px;
+}
+
+.radio-box .radio-color {
+  cursor: pointer;
+  margin-right: 50px;
+  float: right;
+}
+
+.radio-box .radio-color::before {
+  content: "";
+  background: red;
+}
+
+.radio-name {
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 8px;
+}
+/*# sourceMappingURL=filtersidebar.css.map */

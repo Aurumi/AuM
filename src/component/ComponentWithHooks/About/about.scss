@@ -1,0 +1,138 @@
+.wrapperr{
+    //  background-color: pink;
+     max-width: 100%;
+     height: 100%;
+     display: grid;
+     grid-template: auto 1fr auto/auto;
+     grid-template-areas: "aboutHeader"
+                          "aboutMain" 
+                          "aboutOurPeople"
+                          ;
+                          
+}
+
+
+
+.aboutHeader{
+    // background-image: url("../../../image/about/aboutHeader.jpg");
+    background-color: white;
+    background-size: cover;
+    grid-area: aboutHeader;
+    
+    color:black;
+    width: 100%;
+    height: 200px;
+
+    .aboutHeader__tittle{
+      margin-top: 50px ;
+      
+      text-align: center;
+      font-size: 80px;
+    }
+
+    .aboutHeader__text{
+        font-size: 20px;
+    }
+
+}
+
+
+.aboutMain{
+background-color: white;
+    grid-area: aboutMain;
+    min-width: 100%;
+    height: 100%;
+    
+    a{
+        color:black;
+    }
+   
+    .abotMain__tittle{
+        
+        font: normal 52px klavika-bold,Arial,sans-serif;
+    }
+
+    .aboutMain__text{
+
+        p{
+            display: block;
+        }
+  
+max-width: 600px;
+  min-height: 250px;
+  margin:  0 auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  
+    }
+
+    .aboutMain__button{
+        
+        margin-bottom: 150px;
+        margin: 0  auto ;
+        margin-bottom: 20px;
+       
+
+
+        
+
+        &:hover{
+            background-color: black;
+            color: white;
+            transition: all 0.7s ease 0s;
+            border-radius: 5px;
+        }
+
+        
+
+    }
+}
+
+.aboutOurPeople{
+    grid-area: aboutOurPeople;
+    // display:flex;
+    // justify-content: center;
+
+    .aboutOurPeople__row{
+        
+ 
+ 
+ display:inline-flex;
+ flex-wrap:wrap;
+ width: 100%;
+ grid-gap: 4px;
+ 
+ 
+ .aboutOurPeople__element{
+    flex:0 1 33%;
+ }
+
+
+            img{
+                
+                width:100%;
+                height: 100%;
+            }
+    }
+    
+}
+.allButton{
+         display: block;
+         border: 2px solid black;
+          max-width: 200px;
+          padding: 25px;
+}
+
+@media(max-width:767px){
+    .aboutOurPeople__row{
+
+        flex-direction: column;
+    }
+
+    .aboutHeader{
+
+        height: 200px;
+    }
+
+}

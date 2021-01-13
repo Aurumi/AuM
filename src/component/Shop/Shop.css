@@ -1,0 +1,131 @@
+.Shop-wallpaper {
+  max-width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template: 1fr/auto 1fr;
+  grid-template-areas: "Shop-navigation"  "Shop-view";
+}
+
+.Shop-navigation {
+  background-color: white;
+  padding: 0px 30px 0px 30px;
+}
+
+.Shop-navigation .Shop-navigation__list {
+  margin-top: 60px;
+}
+
+.Shop-navigation .Shop-navigation__list .Shop-navigation__mainTittle {
+  text-align: center;
+  display: block;
+  font-weight: bold;
+  font-size: 15px;
+  padding-bottom: 5px;
+  margin-top: 15px;
+}
+
+.Shop-navigation .Shop-navigation__list .Shop-navigation__tittle {
+  display: block;
+  border-bottom: 1px solid black;
+  margin: 8px 0px 8px 0px;
+}
+
+.Shop-view {
+  width: 100%;
+  position: relative;
+  float: left;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.Shop-view .dhgg {
+  width: 600px;
+  height: 500px;
+  background-color: pink;
+  z-index: 2;
+  position: fixed;
+  margin-top: 60px;
+  transition: all 0.7s ease 1s;
+  right: 0;
+}
+
+.Shop-view .dhgg1 {
+  width: 0px;
+  height: 500px;
+  background-color: pink;
+  z-index: 2;
+  position: fixed;
+}
+
+.Shop-view .Shop-tittle-filter {
+  margin-top: 80px;
+}
+
+.Shop-view .Shop-tittle-filter .Shop-tittle {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.Shop-view .Shop-tittle-filter .Shop-filter {
+  text-transform: uppercase;
+  margin-left: 15px;
+}
+
+.Shop-view .Shop-tittle-filter li {
+  display: inline-block;
+}
+
+.Shop-view .Shop-view__filter {
+  text-transform: uppercase;
+}
+
+.Shop-view .Shop-view__flex {
+  margin-top: 80px;
+}
+
+.Shop-view .Shop-view__tittle {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.Shop-view .Shop-cards {
+  max-width: 1400px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.Shop-cards__item img {
+  width: 290px;
+  height: 390px;
+}
+
+.square {
+  display: flex;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.square .square__1 {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+}
+
+.square .square__2 {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+}
+
+.filter-side {
+  position: absolute;
+  background-color: pink;
+  width: 700px;
+  height: 700px;
+  z-index: 2;
+  margin-top: 50px;
+  margin-left: 300px;
+}
+/*# sourceMappingURL=Shop.css.map */

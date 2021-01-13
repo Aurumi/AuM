@@ -1,0 +1,90 @@
+.wrapperRegistration{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    max-width: 100%;
+    min-height: 100vh;
+    // background-image: url("../../../image/registration/registrationFon.jpg");
+}
+
+
+.Sign-in{
+
+    width: 350px;
+    height: 500px;
+    background-color: white;
+    border-radius: 5px;
+    
+}
+
+.Form{
+    font-size: 45px;
+    margin-top: 25px;
+     text-align: center;
+}
+
+.inputStyle{
+    margin-top: 20px;
+    height: 50px;
+    width: 250px;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(153, 9, 81, 0.5);
+}
+
+
+.forms{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    
+}
+.button{
+    
+    
+    border-radius: 20px;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    margin: 20px auto 0 auto;
+     
+   
+}
+
+.button1{
+    background-color: black;
+    color: white;
+    width: 100px;
+
+    transition: all 0.7s ease 0s;
+    &:hover{
+        background-color: pink;
+    }
+}
+
+.label{
+    font-size: 15px;
+}
+
+.anySign{
+    display: flex;
+    // background-color: red;
+    width: 35%;
+    margin: 0 auto;
+    height: 50px;
+}
+
+.anySign__item{
+    flex: 0 1 50%;
+    margin-top: 30px;
+
+    img{
+        border-radius: 50px;
+        max-width: 50px;
+        max-height: 50px;
+
+        &:hover {
+            box-shadow: 0 0 10px rgba(153, 9, 81, 0.5);
+        }
+    }
+}
