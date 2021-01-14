@@ -111,6 +111,10 @@ const shopReducer =(state=initialState, action)=>{
                     return {...hats, switch:false}
                 })}
 
+
+
+                
+
                 // case CHEKEDTOOGLE :
 
                 // return{...state,cards:state.cards.map((card)=>{
