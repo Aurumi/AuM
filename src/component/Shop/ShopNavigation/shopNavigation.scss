@@ -1,0 +1,49 @@
+.Shop-navigation__list{
+    margin-top: 140px;
+    position: sticky;
+    top: 120px;
+     height: 400px;
+   
+   
+   
+    .Shop-navigation-tittle{
+
+        font-size:20px;
+
+        border-bottom: 1px solid black;
+      
+
+        
+       
+    }
+    
+    li{
+        font-size: 15px;
+        margin-top: 10px;
+        
+    }
+    
+    
+    
+    
+}
+
+ .link a{
+    color:black;
+    
+
+    &:hover{
+        color:red;
+    }
+
+}
+
+
+.link a.active{
+    color:red;
+}
+
+
+
+
+

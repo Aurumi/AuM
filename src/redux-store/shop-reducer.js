@@ -36,8 +36,6 @@ const CHEKEDSEASON ="CHEKEDSEASON"
 const initialState ={
 
  
-   
-
      shopNavigationMass :[
 
         {mainTittle:"Мужское",
@@ -74,19 +72,28 @@ const initialState ={
 
     ],
 
+    // cards:[{id:1,cheked:false, img:womanHead1, img2:womanHead11, tittle:"Шапка белая с подкладкой",structure:" Шерсть 80%/ polisteren20%",color1:"black",color2:"red" ,color3:"wheat",price:25,switch:true, season:"лето"} ,
+    //     {id:2, cheked:false, img:womanHead2,img2:womanHead22 ,tittle:"Шапка белая с подкладкой",structure:"Шерсть 80%/polisteren20%",color1:"black",color2:"red",color3:"wheat",price:25,switch:true,season:"лето"},
+    //     {id:3, cheked:false,img:womanHead3,img2:womanHead33,tittle:"Шапка белая с подкладкой",structure:"Шерсть 80%/ polisteren20%",color1:"black",color2:"red" ,color3:"wheat",price:15,switch:true,season:"лето"},
+    //     {id:4, cheked:false, img:womanHead4,img2:womanHead44,tittle:"Шапка белая с подкладкой",structure:"Шерсть 80%/ polisteren20%",color1:"black",color2:"red", color3:"black",price:15,switch:true,season:"весна"},
+    //     {id:5, cheked:false, img:womanHead5,img2:womanHead55,tittle:"Шапка белая с подкладкой",structure:"Хлопок 80%/ polisteren20%",color1:"red",color2:"red", color3:"black",price:25,switch:true,season:"зима"},
+    //     {id:6, cheked:false, img:womanHead6, img2:womanHead66 ,tittle:"Шапка белая с подкладкой",structure:"Хлопок 80%/ polisteren20%",color1:"red",color2:"wheat", color3:"black",price:15,switch:true,season:"лето"},
+    //     {id:7, cheked:false, img:womanHead7, img2:womanHead77 ,tittle:"Шапка белая с подкладкой",structure:"Шерсть 80%/ polisteren20%",color1:"red",color2:"wheat", color3:"black",price:25,switch:true,season:"лето"},
+    //     {id:8, cheked:false, img:womanHead8, img2:womanHead88 ,tittle:"Шапка белая с подкладкой",structure:"Хлопок 80%/ polisteren20%",color1:"black",color2:"wheat", color3:"black",price:"25р",switch:true,season:"осень"},
+    //     {id:9, cheked:false, img:womanHead9, img2:womanHead99 ,tittle:"Шапка белая с подкладкой",structure:"Шерсть 80%/ polisteren20%",color1:"wheat",color2:"wheat", color3:"black",price:"25р",switch:true,season:"весна"},
+    //     {id:10,cheked:false, img:womanHead10, img2:womanHead1010 ,tittle:"Шапка белая с подкладкой",structure:"Хлопок 80%/ polisteren20%",color1:"wheat",color2:"wheat", color3:"black",price:"25р",switch:true,season:"лето"},
+    //     {id:11,cheked:false, img:womanHead111, img2:womanHead111111 ,tittle:"Шапка белая с подкладкой",structure:"Хлопок 80%/ polisteren20%",color1:"wheat",color2:"wheat" ,color3:"wheat",price:"25р",switch:true,season:"лето"}],
 
-    cards:[{id:1,cheked:false, img:womanHead1, img2:womanHead11, tittle:"Шапка белая с подкладкой",structure:" Шерсть 80%/ polisteren20%",color1:"black",color2:"red" ,color3:"wheat",price:25,switch:true, season:"лето"} ,
-        {id:2, cheked:false, img:womanHead2,img2:womanHead22 ,tittle:"Шапка белая с подкладкой",structure:"Шерсть 80%/polisteren20%",color1:"black",color2:"red",color3:"wheat",price:25,switch:true,season:"лето"},
-        {id:3, cheked:false,img:womanHead3,img2:womanHead33,tittle:"Шапка белая с подкладкой",structure:"Шерсть 80%/ polisteren20%",color1:"black",color2:"red" ,color3:"wheat",price:15,switch:true,season:"лето"},
-        {id:4, cheked:false, img:womanHead4,img2:womanHead44,tittle:"Шапка белая с подкладкой",structure:"Шерсть 80%/ polisteren20%",color1:"black",color2:"red", color3:"black",price:15,switch:true,season:"весна"},
-        {id:5, cheked:false, img:womanHead5,img2:womanHead55,tittle:"Шапка белая с подкладкой",structure:"Хлопок 80%/ polisteren20%",color1:"red",color2:"red", color3:"black",price:25,switch:true,season:"зима"},
-        {id:6, cheked:false, img:womanHead6, img2:womanHead66 ,tittle:"Шапка белая с подкладкой",structure:"Хлопок 80%/ polisteren20%",color1:"red",color2:"wheat", color3:"black",price:15,switch:true,season:"лето"},
-        {id:7, cheked:false, img:womanHead7, img2:womanHead77 ,tittle:"Шапка белая с подкладкой",structure:"Шерсть 80%/ polisteren20%",color1:"red",color2:"wheat", color3:"black",price:25,switch:true,season:"лето"},
-        {id:8, cheked:false, img:womanHead8, img2:womanHead88 ,tittle:"Шапка белая с подкладкой",structure:"Хлопок 80%/ polisteren20%",color1:"black",color2:"wheat", color3:"black",price:"25р",switch:true,season:"осень"},
-        {id:9, cheked:false, img:womanHead9, img2:womanHead99 ,tittle:"Шапка белая с подкладкой",structure:"Шерсть 80%/ polisteren20%",color1:"wheat",color2:"wheat", color3:"black",price:"25р",switch:true,season:"весна"},
-        {id:10,cheked:false, img:womanHead10, img2:womanHead1010 ,tittle:"Шапка белая с подкладкой",structure:"Хлопок 80%/ polisteren20%",color1:"wheat",color2:"wheat", color3:"black",price:"25р",switch:true,season:"лето"},
-        {id:11,cheked:false, img:womanHead111, img2:womanHead111111 ,tittle:"Шапка белая с подкладкой",structure:"Хлопок 80%/ polisteren20%",color1:"wheat",color2:"wheat" ,color3:"wheat",price:"25р",switch:true,season:"лето"}]
 
+   womanHats:[ {id:1,img:womanHead1,img2:womanHead11, tittle:"Шапка белая", structure:"Шерсть", price:25, season:"Зима",switch:false},
+               {id:2,img:womanHead2,img2:womanHead22, tittle:"Шапка белая", structure:"Шерсть", price:23, season:"Зима",switch:false},
+               {id:3,img:womanHead3,img2:womanHead33, tittle:"Шапка белая", structure:"Шерсть", price:22, season:"Зима",switch:false},
+               {id:4,img:womanHead4,img2:womanHead44, tittle:"Шапка белая", structure:"Шерсть", price:21, season:"Зима",switch:false},
+               {id:5,img:womanHead5,img2:womanHead55, tittle:"Шапка белая", structure:"Шерсть", price:24, season:"Зима",switch:false},
+               
+                 
+ ],
+        
 
 }
 
@@ -97,44 +104,44 @@ const shopReducer =(state=initialState, action)=>{
         switch(action.type){
 
             case SWITCHON:
-                return{...state,cards:state.cards.map((card)=>{
-                    if(card.id===action.id){
-                        return {...card, switch:false}
+                return{...state,womanHats:state.womanHats.map((hats)=>{
+                    if(hats.id===action.id){
+                        return {...hats, switch:true}
                     }
-                    return {...card, switch:true}
+                    return {...hats, switch:false}
                 })}
 
-                case CHEKEDTOOGLE :
+                // case CHEKEDTOOGLE :
 
-                return{...state,cards:state.cards.map((card)=>{
-                    if(action.cheked===true && action.structure===card.structure){
-                        return {...card,cheked:true}
-                    }
-                    return {...card,cheked:false}
+                // return{...state,cards:state.cards.map((card)=>{
+                //     if(action.cheked===true && action.structure===card.structure){
+                //         return {...card,cheked:true}
+                //     }
+                //     return {...card,cheked:false}
                     
-                })}
+                // })}
                 
 
-                case CHEKEDSELL :
+                // case CHEKEDSELL :
 
-                    return{...state,cards:state.cards.map((card)=>{
-                        if(action.cheked===true && action.price===card.price){
-                            return {...card,cheked:true}
-                        } 
-                        return {...card,cheked:false}
+                //     return{...state,cards:state.cards.map((card)=>{
+                //         if(action.cheked===true && action.price===card.price){
+                //             return {...card,cheked:true}
+                //         } 
+                //         return {...card,cheked:false}
                         
-                    })}
+                //     })}
 
 
-                    case CHEKEDSEASON:
+                //     case CHEKEDSEASON:
 
-                    return{...state,cards:state.cards.map((card)=>{
-                        if(action.cheked===true && action.season===card.season){
-                            return {...card,cheked:true}
-                        } 
-                        return {...card,cheked:false}
+                //     return{...state,cards:state.cards.map((card)=>{
+                //         if(action.cheked===true && action.season===card.season){
+                //             return {...card,cheked:true}
+                //         } 
+                //         return {...card,cheked:false}
                         
-                    })}
+                //     })}
         
             
       

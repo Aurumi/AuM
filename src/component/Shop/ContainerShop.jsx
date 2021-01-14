@@ -19,7 +19,8 @@ const mapStateToProps =(state)=>{
             // totalCards:state.shopPage.totalCards,
             // sizeCards:state.shopPage.sizeCards,
             Navigation:state.shopPage.shopNavigationMass,
-            cards:state.shopPage.cards
+            cards:state.shopPage.cards,
+            womanHats:state.shopPage.womanHats
     }
 }
 

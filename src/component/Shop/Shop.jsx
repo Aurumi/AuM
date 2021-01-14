@@ -6,9 +6,10 @@ import Filter from "../Filter/Filter";
 import {Transition} from 'react-spring/renderprops'
 import FilterSideBar from "../Filter/filterSideBar/filterSidebar";
 
-import { Route } from "react-router-dom"
+import { Route, Switch } from "react-router-dom"
 import Registration from "../ComponentWithHooks/Registration/Registration";
 import Cards from "../ComponentWithHooks/Cards/Cards"
+import ShopNavigation from "./ShopNavigation/ShopNavigation";
 
 
 const Shop =(props)=>{
@@ -23,50 +24,9 @@ const [switches, setSwitches] =useState(false)
 
         <div className="Shop-navigation">
 
-            <ul className="Shop-navigation__list">
+            <ShopNavigation/>
 
-           { props.Navigation.map((navigation)=>{
-
-   return <li ><span className="Shop-navigation__mainTittle">{navigation.mainTittle}</span>
-        <ul>
-
-       <li><span className="Shop-navigation__tittle">{navigation.tittleFirst}</span>
-        
-        <ul>
-            <li>
-               {navigation.liFirst}
-            </li>
-            <li>
-                {navigation.liSecond}
-             </li>
-            <li></li>
-        </ul>
-        </li>
-           <li><span className="Shop-navigation__tittle">{navigation.tittleSecond}</span>
-                        <ul>
-                         <li>{navigation.liThird}</li>
-                            <li>{navigation.liFourth}</li>
-                            
-                        </ul>
-                    </li>
-
-            <li><span className="Shop-navigation__tittle">{navigation.tittleThird}</span>
-         <ul>
-         <li>{navigation.liFifth}</li>
-        <li>{navigation.lisixth}</li>
-             </ul>       
-
-             
-            </li>
-
-
-
-        </ul>
-
-</li>
-})}
-                
-            </ul>
+            
         </div>
 
 
@@ -94,7 +54,12 @@ const [switches, setSwitches] =useState(false)
 
             <div className="Shop-cards">
 
-                            <Cards {...props}/>
+                           <Switch>
+
+                           
+                          < Route path="/Shop/womanHats" render={()=><Cards element={props.womanHats} switchOnAc={props.switchOnAc}/>}></Route>
+                           </Switch>
+                            
 
 
 

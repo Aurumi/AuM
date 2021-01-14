@@ -11,28 +11,8 @@
   padding: 0px 30px 0px 30px;
 }
 
-.Shop-navigation .Shop-navigation__list {
-  margin-top: 60px;
-}
-
-.Shop-navigation .Shop-navigation__list .Shop-navigation__mainTittle {
-  text-align: center;
-  display: block;
-  font-weight: bold;
-  font-size: 15px;
-  padding-bottom: 5px;
-  margin-top: 15px;
-}
-
-.Shop-navigation .Shop-navigation__list .Shop-navigation__tittle {
-  display: block;
-  border-bottom: 1px solid black;
-  margin: 8px 0px 8px 0px;
-}
-
 .Shop-view {
   width: 100%;
-  position: relative;
   float: left;
   max-width: 100%;
   margin: 0 auto;

@@ -6,11 +6,11 @@ import "./cards.css"
 const Cards =(props)=>{
 
      return <>
-   {props.cards.map((element)=>{
-       if(element.cheked){
+   {props.element.map((element)=>{
+     //   if(element.cheked){
         return <div onMouseEnter={()=>{props.switchOnAc(element.id)}}  className="Shop-cards__item">
                                        
-        {(element.switch===false)?<img src={element.img2} alt=""/>:<img src={element.img} alt=""/>} 
+        {(element.switch)?<img src={element.img2} alt=""/>:<img src={element.img} alt=""/>} 
          <div className="Shop-cards__text">
     <p>{element.tittle}</p>
     <p>{element.structure}</p>
@@ -20,7 +20,7 @@ const Cards =(props)=>{
         
     </div> 
 
-       }
+     //   }
   
 
     })}
