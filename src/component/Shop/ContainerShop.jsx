@@ -1,13 +1,13 @@
 import React from "react";
 import { connect } from "react-redux";
-import { chekedPriceAc, chekedSeasonAc, chekedToogleAc, switchOnAc } from "../../redux-store/shop-reducer";
+import { chekedPriceAc, chekedSeasonAc, chekedToogleAc, switchOnAc, switchOnWomanScarvesAc } from "../../redux-store/shop-reducer";
 import Shop from "./Shop";
 // switchOnAc
 
 
 const ContainerShop =(props)=>{
 
-    return <Shop {...props} switchOnAc={props.switchOnAc} chekedToogleAc={props.chekedToogleAc} chekedPriceAc={props.chekedPriceAc} chekedSeasonAc={props.chekedSeasonAc}/>
+    return <Shop {...props} switchOnWomanScarvesAc={props.switchOnWomanScarvesAc} switchOnAc={props.switchOnAc} chekedToogleAc={props.chekedToogleAc} chekedPriceAc={props.chekedPriceAc} chekedSeasonAc={props.chekedSeasonAc}/>
 }
 
 
@@ -20,7 +20,8 @@ const mapStateToProps =(state)=>{
             // sizeCards:state.shopPage.sizeCards,
             Navigation:state.shopPage.shopNavigationMass,
             cards:state.shopPage.cards,
-            womanHats:state.shopPage.womanHats
+            womanHats:state.shopPage.womanHats,
+            womanScarves:state.shopPage.womanScarves
     }
 }
 
@@ -28,4 +29,4 @@ const mapStateToProps =(state)=>{
 
 
 
-export default connect(mapStateToProps,{chekedToogleAc,switchOnAc,chekedPriceAc,chekedSeasonAc})(ContainerShop)
+export default connect(mapStateToProps,{switchOnWomanScarvesAc,chekedToogleAc,switchOnAc,chekedPriceAc,chekedSeasonAc})(ContainerShop)

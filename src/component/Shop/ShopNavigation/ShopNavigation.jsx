@@ -13,7 +13,7 @@ const ShopNavigation =()=>{
             <span className="Shop-navigation-tittle">Женское</span> 
             <ul className="link">
                <NavLink exact to="/Shop/womanHats"><li activeClassName="active" >Шапки</li></NavLink> 
-                <li>Шарфы</li>
+               <NavLink exact to="/Shop/womanScarves"><li activeClassName="active" >Шарфы</li></NavLink> 
                 <li>Платки</li>
                 <li>Перчатки</li>
             </ul>

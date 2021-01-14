@@ -3,7 +3,8 @@
   min-height: 100vh;
   display: grid;
   grid-template: 1fr/auto 1fr;
-  grid-template-areas: "Shop-navigation"  "Shop-view";
+  grid-template-areas: "Shop-navigation" 
+ "Shop-view";
 }
 
 .Shop-navigation {
@@ -12,9 +13,9 @@
 }
 
 .Shop-view {
-  width: 100%;
-  float: left;
-  max-width: 100%;
+  /* width: 100%; */
+  /* float: left; */
+  max-width: 1350px;
   margin: 0 auto;
 }
 
@@ -77,8 +78,8 @@
 }
 
 .Shop-cards__item img {
-  width: 290px;
-  height: 390px;
+  min-width: 290px;
+  min-height: 380px;
 }
 
 .square {

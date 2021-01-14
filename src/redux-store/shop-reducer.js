@@ -8,18 +8,18 @@ import womanHead4 from "../image/models/womanHeads/zara4.jpg"
 import womanHead44 from "../image/models/womanHeads/zara44.jpg"
 import womanHead5 from "../image/models/womanHeads/zara5.jpg"
 import womanHead55 from "../image/models/womanHeads/zara55.jpg"
-import womanHead6 from "../image/models/womanHeads/zara6.jpg"
-import womanHead66 from "../image/models/womanHeads/zara66.jpg"
-import womanHead7 from "../image/models/womanHeads/zara7.jpg"
-import womanHead77 from "../image/models/womanHeads/zara77.jpg"
-import womanHead8 from "../image/models/womanHeads/zara8.jpg"
-import womanHead88 from "../image/models/womanHeads/zara88.jpg"
-import womanHead9 from "../image/models/womanHeads/zara9.jpg"
-import womanHead99 from "../image/models/womanHeads/zara99.jpg"
-import womanHead10 from "../image/models/womanHeads/zara10.jpg"
-import womanHead1010 from "../image/models/womanHeads/zara1010.jpg"
-import womanHead111 from "../image/models/womanHeads/zara111.jpg"
-import womanHead111111 from "../image/models/womanHeads/zara111111.jpg"
+import womanScarves1 from "../image/models/womanScarves/zara1.jpg"
+import womanScarves11 from "../image/models/womanScarves/zara11.jpg"
+import womanScarves2 from "../image/models/womanScarves/zara2.jpg"
+import womanScarves22 from "../image/models/womanScarves/zara22.jpg"
+import womanScarves3 from "../image/models/womanScarves/zara3.jpg"
+import womanScarves33 from "../image/models/womanScarves/zara33.jpg"
+import womanScarves4 from "../image/models/womanScarves/zara4.jpg"
+import womanScarves44 from "../image/models/womanScarves/zara44.jpg"
+import womanScarves5 from "../image/models/womanScarves/zara5.jpg"
+import womanScarves55 from "../image/models/womanScarves/zara55.jpg"
+import womanScarves6 from "../image/models/womanScarves/zara6.jpg"
+import womanScarves66 from "../image/models/womanScarves/zara66.jpg"
 
 
 
@@ -32,6 +32,7 @@ const SWITCHON ="SWITCHON";
 
 const CHEKEDSELL="CHEKEDSELL"
 const CHEKEDSEASON ="CHEKEDSEASON"
+const SWITCHON_WOMAN_SCARVES="SWITCHON_WOMAN_SCARVES"
 
 const initialState ={
 
@@ -93,8 +94,38 @@ const initialState ={
                
                  
  ],
+
+ womanScarves:[
+
+    {id:1,img:womanScarves1,img2:womanScarves11, tittle:"Шарф", structure:"Шерсть", price:25, season:"Зима",switch:false},
+    {id:2,img:womanScarves2,img2:womanScarves22, tittle:"Шарф", structure:"Шерсть", price:23, season:"Зима",switch:false},
+    {id:3,img:womanScarves3,img2:womanScarves33, tittle:"Шарф", structure:"Шерсть", price:22, season:"Зима",switch:false},
+    {id:4,img:womanScarves4,img2:womanScarves44, tittle:"Шарф", structure:"Шерсть", price:21, season:"Зима",switch:false},
+    {id:5,img:womanScarves5,img2:womanScarves55, tittle:"Шарф", structure:"Шерсть", price:24, season:"Зима",switch:false},
+    {id:5,img:womanScarves6,img2:womanScarves66, tittle:"Шарф", structure:"Шерсть", price:24, season:"Зима",switch:false},
+
+ ]
         
 
+}
+
+let switchON =(items , id)=>{
+
+
+    return items.map((item)=>{
+        if(item.id===id){
+
+            return {...item, switch:true}
+        }
+        return {...item, switch:false}
+        
+    })
+    // return{...state,womanHats:state.womanHats.map((hats)=>{
+    //     if(hats.id===action.id){
+    //         return {...hats, switch:true}
+    //     }
+    //     return {...hats, switch:false}
+    // })}
 }
 
 
@@ -104,14 +135,26 @@ const shopReducer =(state=initialState, action)=>{
         switch(action.type){
 
             case SWITCHON:
-                return{...state,womanHats:state.womanHats.map((hats)=>{
-                    if(hats.id===action.id){
-                        return {...hats, switch:true}
+                return{...state,womanHats:switchON(state.womanHats , action.id)
+                    
+                    
+                    // state.womanHats.map((hats)=>{
+                    // if(hats.id===action.id){
+                    //     return {...hats, switch:true}
+                    // }
+                    // return {...hats, switch:false}
+                // })}
+                }
+
+            
+
+                case SWITCHON_WOMAN_SCARVES:
+                return{...state,womanScarves:state.womanScarves.map((scarves)=>{
+                    if(scarves.id===action.id){
+                        return {...scarves, switch:true}
                     }
-                    return {...hats, switch:false}
+                    return {...scarves, switch:false}
                 })}
-
-
 
                 
 
@@ -174,6 +217,7 @@ const shopReducer =(state=initialState, action)=>{
 
 
  export const switchOnAc =(id)=>({type:SWITCHON ,id})
+ export const switchOnWomanScarvesAc =(id)=>({type:SWITCHON_WOMAN_SCARVES ,id})
 
  export const chekedToogleAc =(cheked,structure)=>({type:CHEKEDTOOGLE ,cheked, structure})
 

@@ -21,10 +21,10 @@
 }
 
 .Shop-view{
-width: 100%;
-
-float: left;
-
+// // max-width: 100px;
+// // margin: 0 auto;
+// // // float: left;
+// background-color: red;
 .dhgg{
     
     width: 600px;
@@ -97,8 +97,8 @@ float: left;
     .Shop-cards{
         max-width: 1400px;
         
-     display: inline-flex;
-     
+    //  display: inline-flex;
+     margin: 0 auto;
      
      flex-wrap: wrap;
         margin-top:30px;
