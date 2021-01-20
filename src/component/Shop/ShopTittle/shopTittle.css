@@ -1,0 +1,22 @@
+.Shop-tittle-filter {
+  display: inline-block;
+  width: 100%;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.Shop-tittle-filter .Shop-tittle {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.Shop-tittle-filter .Shop-filter {
+  text-transform: uppercase;
+  margin-left: 15px;
+}
+
+.Shop-tittle-filter li {
+  display: inline-block;
+}
+/*# sourceMappingURL=shopTittle.css.map */

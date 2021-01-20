@@ -9,7 +9,7 @@ import ShopNavigation from "./ShopNavigation/ShopNavigation";
 
 const Shop =(props)=>{
 
-const [switches, setSwitches] =useState(false)
+// const [switches, setSwitches] =useState(false)
 
 
 
@@ -28,9 +28,9 @@ const [switches, setSwitches] =useState(false)
 
 
         <div className="Shop-view">
-            {switches?<FilterSideBar {...props}  chekedToogleAc={props.chekedToogleAc} chekedPriceAc={props.chekedPriceAc} chekedSeasonAc={props.chekedSeasonAc}/>:<div></div>}
-           
-                <ul className="Shop-tittle-filter">
+            {/* {switches?<FilterSideBar {...props}  chekedToogleAc={props.chekedToogleAc} chekedPriceAc={props.chekedPriceAc} chekedSeasonAc={props.chekedSeasonAc}/>:<div></div>} */}
+            
+                {/* <ul className="Shop-tittle-filter">
                     <li className="Shop-tittle">
                     Шапки
                     </li>
@@ -45,16 +45,17 @@ const [switches, setSwitches] =useState(false)
                     </li>
                   
 
-                </ul>        
+                </ul>         */}
 
             <div className="Shop-cards">
 
-                           <Switch>
+                          
 
-                           < Route path="/Shop/womanScarves" render={()=><Cards element={props.womanScarves} switchOnAc={props.switchOnWomanScarvesAc}/>}></Route>
-                          < Route path="/Shop/womanHats" render={()=><Cards element={props.womanHats} switchOnAc={props.switchOnAc}/>}></Route>
-                           </Switch>
-                            
+                           < Route path="/Shop/womanScarves"  render={()=><Cards chekedPriceAc={props.chekedPriceAc}  filter={props.filter} clickFilter={props.clickFilter} tittle={props.tittleShopPage.tittleScarves} element={props.womanScarves} switchOnAc={props.switchOnWomanScarvesAc}/>}></Route>
+                          < Route path="/Shop/womanHats" render={()=><Cards filter={props.filter} clickFilter={props.clickFilter} tittle={props.tittleShopPage.tittleHats} element={props.womanHats} switchOnAc={props.switchOnWomanHatsAc}/>}></Route>
+                          < Route path="/Shop/womanWrap" render={()=><Cards  filter={props.filter} clickFilter={props.clickFilter} tittle={props.tittleShopPage.tittleWrap} element={props.womanWrap} switchOnAc={props.switchOnWomanWrapAc}/>}></Route>
+                          < Route path="/Shop/womanGloves" render={()=><Cards  filter={props.filter} clickFilter={props.clickFilter} tittle={props.tittleShopPage.tittleGloves} element={props.womanGloves} switchOnAc={props.switchOnWomanGlovesAc}/>}></Route>
+                           
                
             </div>
         </div>

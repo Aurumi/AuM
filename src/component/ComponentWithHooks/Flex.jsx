@@ -31,7 +31,6 @@ const Bycicle = (props)=>{
             <Route path="/ZARA" render = {()=><OurVideo/>}></Route>  
              <Route path="/registration" render ={()=><Registration/>}></Route>  
                 <Route path="/main" render = {()=><Main1/>}></Route>  
-              {/* <Route path="/main" render = {()=><Main/>}></Route>   */}
               <Route path="/about" render = {()=><About/>}></Route>
               <Redirect from ="/" to="/main"></Redirect>
              </div>

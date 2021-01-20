@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,mBAAmB,CAAA;EACf,OAAO,EAAC,YAAY;EACpB,KAAK,EAAE,IAAI;EACX,UAAU,EAAE,IAAI;EAChB,aAAa,EAAE,IAAI;CAoBtB;;AAxBD,AAOM,mBAPa,CAOb,YAAY,CAAA;EACR,cAAc,EAAE,SAAS;EACzB,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,GAAG;CAGnB;;AAbP,AAeM,mBAfa,CAeb,YAAY,CAAA;EACV,cAAc,EAAE,SAAS;EACzB,WAAW,EAAE,IAAI;CACpB;;AAlBL,AAoBI,mBApBe,CAoBf,EAAE,CAAA;EACE,OAAO,EAAE,YAAY;CACxB",
+    "sources": [
+        "shopTittle.scss"
+    ],
+    "names": [],
+    "file": "shopTittle.css"
+}

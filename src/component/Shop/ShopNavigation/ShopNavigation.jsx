@@ -14,8 +14,8 @@ const ShopNavigation =()=>{
             <ul className="link">
                <NavLink exact to="/Shop/womanHats"><li activeClassName="active" >Шапки</li></NavLink> 
                <NavLink exact to="/Shop/womanScarves"><li activeClassName="active" >Шарфы</li></NavLink> 
-                <li>Платки</li>
-                <li>Перчатки</li>
+               <NavLink exact to="/Shop/womanWrap"><li activeClassName="active" >Платки</li></NavLink>
+               <NavLink exact to="/Shop/womanGloves"><li activeClassName="active" >Перчатки</li></NavLink>
             </ul>
            </li>
 

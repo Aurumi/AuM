@@ -22,4 +22,12 @@
   background-color: black;
   color: white;
 }
+
+.filter-wrapper {
+  width: 100%;
+}
+
+.filter-wrapper li {
+  display: inline-block;
+}
 /*# sourceMappingURL=cards.css.map */

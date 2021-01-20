@@ -1,21 +1,47 @@
-import React from "react";
+import React, { useState } from "react";
+
+import Filter from "../../Filter/Filter";
+import FilterSideBar from "../../Filter/filterSideBar/filterSidebar";
+import ShopTittle from "../../Shop/ShopTittle/ShopTittle";
 import "./cards.css"
 
 
 
 const Cards =(props)=>{
 
+     const [toogleFilter, setToogleFilter] = useState(false)
+
+     
+
      return <>
+     
+     {(toogleFilter)?
+
+     <FilterSideBar  chekedPriceAc={props.chekedPriceAc}/> 
+     
+     :""}
+
+    
+    <div className="filter-wrapper">
+    <li><ShopTittle  tittle={props.tittle}/></li> 
+    <li onClick={()=>{setToogleFilter(true)}}><Filter /></li>
+     </div> 
+     
+
+     
+     
+     
    {props.element.map((element)=>{
+        
      //   if(element.cheked){
         return <div onMouseEnter={()=>{props.switchOnAc(element.id)}}  className="Shop-cards__item">
-                                       
+                                   
         {(element.switch)?<img src={element.img2} alt=""/>:<img src={element.img} alt=""/>} 
          <div className="Shop-cards__text">
     <p>{element.tittle}</p>
     <p>{element.structure}</p>
     <p>{element.price}</p>
-         </div>
+         </div> 
         
         
     </div> 

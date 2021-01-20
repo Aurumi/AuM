@@ -3,6 +3,7 @@
     flex: 0 1 25%;
     
     
+    
     .Shop-cards__text{
 
            margin-top: 15px;
@@ -29,4 +30,15 @@
        background-color: black;
        color: white;
     }
+   }
+
+   .filter-wrapper{
+        width: 100%;
+
+
+        li{
+            display: inline-block;
+        }
+        
+        
    }
