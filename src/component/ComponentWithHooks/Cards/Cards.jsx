@@ -33,7 +33,7 @@ const Cards =(props)=>{
      
    {props.element.map((element)=>{
         
-     //   if(element.cheked){
+       if(element.filter){
         return <div onMouseEnter={()=>{props.switchOnAc(element.id)}}  className="Shop-cards__item">
                                    
         {(element.switch)?<img src={element.img2} alt=""/>:<img src={element.img} alt=""/>} 
@@ -46,7 +46,7 @@ const Cards =(props)=>{
         
     </div> 
 
-     //   }
+       }
   
 
     })}

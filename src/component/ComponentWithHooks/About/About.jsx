@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import "../About/about.css"
 import {Spring ,Donut} from 'react-spring/renderprops'
 import { NavLink } from "react-router-dom";
@@ -9,8 +9,8 @@ const About =()=>{
 
 
 
-
-
+    
+   
     return <div className=" wrapperr">
         <div className="aboutHeader" > 
         <div className="aboutHeader__tittle" data-aos="fade-left" >  A&U </div>
@@ -40,6 +40,7 @@ Founded in 2001 and rooted in digital, you can find MediaView, Sandpoint, Toront
 
         </div>
 </div>
+
 }
 
 
