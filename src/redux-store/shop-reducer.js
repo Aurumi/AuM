@@ -162,7 +162,6 @@ let switchON =(items , id)=>{
     
 }
 
-
 const shopReducer =(state=initialState, action)=>{
 
 
@@ -184,40 +183,7 @@ const shopReducer =(state=initialState, action)=>{
             return {...state,womanGloves:switchON(state.womanGloves ,action.id)}
 
 
-            // case CLICK_FILTER:
 
-            // return {...state,filter:true}
-
-            // case SWITCH_MAN_HATS:
-
-            // return {...state,manHats}
-
-
-
-
-
-
-
-
-                // return{...state,womanScarves:state.womanScarves.map((scarves)=>{
-                //     if(scarves.id===action.id){
-                //         return {...scarves, switch:true}
-                //     }
-                //     return {...scarves, switch:false}
-                // })}
-
-                
-
-                // case CHEKEDTOOGLE :
-
-                // return{...state,cards:state.cards.map((card)=>{
-                //     if(action.cheked===true && action.structure===card.structure){
-                //         return {...card,cheked:true}
-                //     }
-                //     return {...card,cheked:false}
-                    
-                // })}
-                
 
                 case DATA_FILTER_FORM :
 
