@@ -1,7 +1,9 @@
 .filter-side-bar {
+  border: 2px solid DarkOliveGreen;
   background-color: white;
-  width: 450px;
-  height: 100vh;
+  width: 350px;
+  min-width: 250px;
+  height: 500px;
   position: fixed;
   z-index: 4;
   right: 0px;
@@ -48,24 +50,9 @@
   margin-top: 8px;
 }
 
-.buttonWrapper {
-  display: flex;
-  justify-content: center;
-}
-
-button {
-  display: block;
-  border: 2px solid black;
-  max-width: 200px;
-  margin-right: 5px;
-  padding: 10px;
-  background-color: white;
-}
-
-button:hover {
-  background-color: black;
-  color: white;
-  transition: all 0.7s ease 0s;
-  border-radius: 5px;
+.hpp {
+  width: 100px;
+  height: 100px;
+  background-color: red;
 }
 /*# sourceMappingURL=filtersidebar.css.map */

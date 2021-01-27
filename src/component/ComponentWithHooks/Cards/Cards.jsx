@@ -17,7 +17,7 @@ const Cards =(props)=>{
      
      {(toogleFilter)?
 
-     <FilterSideBar  chekedPriceAc={props.chekedPriceAc}/> 
+     <FilterSideBar clearFilterFormAc={props.clearFilterFormAc}  chekedPriceAc={props.chekedPriceAc}/> 
      
      :""}
 
@@ -33,7 +33,7 @@ const Cards =(props)=>{
      
    {props.element.map((element)=>{
         
-       if(element.filter){
+       if(element.filter===false){
         return <div onMouseEnter={()=>{props.switchOnAc(element.id)}}  className="Shop-cards__item">
                                    
         {(element.switch)?<img src={element.img2} alt=""/>:<img src={element.img} alt=""/>} 

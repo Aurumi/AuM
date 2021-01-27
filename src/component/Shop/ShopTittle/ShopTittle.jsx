@@ -13,7 +13,7 @@ const ShopTittle =(props)=>{
 
     
     <li  className="Shop-filter"> 
-    фильтр и сортировка
+    фильтр товаров
     </li>
 
     {/* <li onClick={ ()=>{setSwitches(true)}} >

@@ -51,7 +51,7 @@ const Shop =(props)=>{
 
                                 
                              
-                           < Route path="/Shop/womanScarves"  render={()=><Cards chekedPriceAc={props.chekedPriceAc}  filter={props.filter} clickFilter={props.clickFilter} tittle={props.tittleShopPage.tittleScarves} element={props.womanScarves} switchOnAc={props.switchOnWomanScarvesAc}/>}></Route>
+                           < Route path="/Shop/womanScarves"  render={()=><Cards clearFilterFormAc={props.clearFilterFormAc} chekedPriceAc={props.chekedPriceAc}  filter={props.filter} clickFilter={props.clickFilter} tittle={props.tittleShopPage.tittleScarves} element={props.womanScarves} switchOnAc={props.switchOnWomanScarvesAc}/>}></Route>
                           < Route path="/Shop/womanHats" render={()=><Cards filter={props.filter} clickFilter={props.clickFilter} tittle={props.tittleShopPage.tittleHats} element={props.womanHats} switchOnAc={props.switchOnWomanHatsAc}/>}></Route>
                           < Route path="/Shop/womanWrap" render={()=><Cards  filter={props.filter} clickFilter={props.clickFilter} tittle={props.tittleShopPage.tittleWrap} element={props.womanWrap} switchOnAc={props.switchOnWomanWrapAc}/>}></Route>
                           < Route path="/Shop/womanGloves" render={()=><Cards  filter={props.filter} clickFilter={props.clickFilter} tittle={props.tittleShopPage.tittleGloves} element={props.womanGloves} switchOnAc={props.switchOnWomanGlovesAc}/>}></Route>

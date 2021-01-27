@@ -49,7 +49,7 @@
 }
 
 .Shop-view .Shop-cards {
-  max-width: 1400px;
+  max-width: 1200px;
   display: inline-flex;
   margin: 0 auto;
   flex-wrap: wrap;

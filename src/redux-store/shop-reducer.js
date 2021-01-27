@@ -43,6 +43,8 @@ const SWITCHON_WOMAN_SCARVES="SWITCHON_WOMAN_SCARVES"
  const SWITCH_MAN_HATS="SWITCH_MAN_HATS"
  const CLICK_FILTER ="CLICK_FILTER"
 
+ const CLEAR_FILTER_FORM="CLEAR_FILTER_FORM"
+
 const initialState ={
 
  
@@ -124,21 +126,21 @@ womanHats:[
 
  womanScarves:[
 
-    {id:1, filter:true,img:womanScarves1,img2:womanScarves11, tittle:"Шарф", structure:"Шерсть", price:25, season:"Весна",switch:false},
-    {id:2, filter:true,img:womanScarves2,img2:womanScarves22, tittle:"Шарф", structure:"Шерсть", price:15, season:"Весна",switch:false},
-    {id:3, filter:true,img:womanScarves3,img2:womanScarves33, tittle:"Шарф", structure:"Шерсть", price:25, season:"Осень",switch:false},
-    {id:4, filter:true,img:womanScarves4,img2:womanScarves44, tittle:"Шарф", structure:"Шерсть", price:15, season:"Осень",switch:false},
-    {id:5, filter:true,img:womanScarves5,img2:womanScarves55, tittle:"Шарф", structure:"Шерсть", price:25, season:"Зима",switch:false},
-    {id:6, filter:true, img:womanScarves6,img2:womanScarves66, tittle:"Шарф", structure:"Шерсть", price:15, season:"Лето",switch:false},
+    {id:1, filter:false,img:womanScarves1,img2:womanScarves11, tittle:"Шарф", structure:"Шерсть", price:25, season:"Весна",switch:false},
+    {id:2, filter:false,img:womanScarves2,img2:womanScarves22, tittle:"Шарф", structure:"Шерсть", price:15, season:"Весна",switch:false},
+    {id:3, filter:false,img:womanScarves3,img2:womanScarves33, tittle:"Шарф", structure:"Шерсть", price:25, season:"Осень",switch:false},
+    {id:4, filter:false,img:womanScarves4,img2:womanScarves44, tittle:"Шарф", structure:"Шерсть", price:15, season:"Осень",switch:false},
+    {id:5, filter:false,img:womanScarves5,img2:womanScarves55, tittle:"Шарф", structure:"Шерсть", price:25, season:"Зима",switch:false},
+    {id:6, filter:false, img:womanScarves6,img2:womanScarves66, tittle:"Шарф", structure:"Шерсть", price:15, season:"Лето",switch:false},
 
  ],
 
  womanWrap:[
-    {id:1, filter:true,img:womanWrap1,img2:womanWrap11, tittle:"Платок", structure:"Шерсть", price:25, season:"Зима",switch:false},
-    {id:2, filter:true,img:womanWrap2,img2:womanWrap22, tittle:"Платок", structure:"Шерсть", price:25, season:"Зима",switch:false},
-    {id:3, filter:true,img:womanWrap3,img2:womanWrap33, tittle:"Платок", structure:"Шерсть", price:25, season:"Зима",switch:false},
-    {id:4, filter:true,img:womanWrap4,img2:womanWrap44, tittle:"Платок", structure:"Шерсть", price:25, season:"Зима",switch:false},
-    {id:5, filter:true,img:womanWrap5,img2:womanWrap55, tittle:"Платок", structure:"Шерсть", price:25, season:"Зима",switch:false},
+    {id:1, filter:false,img:womanWrap1,img2:womanWrap11, tittle:"Платок", structure:"Шерсть", price:25, season:"Зима",switch:false},
+    {id:2, filter:false,img:womanWrap2,img2:womanWrap22, tittle:"Платок", structure:"Шерсть", price:25, season:"Зима",switch:false},
+    {id:3, filter:false,img:womanWrap3,img2:womanWrap33, tittle:"Платок", structure:"Шерсть", price:25, season:"Зима",switch:false},
+    {id:4, filter:false,img:womanWrap4,img2:womanWrap44, tittle:"Платок", structure:"Шерсть", price:25, season:"Зима",switch:false},
+    {id:5, filter:false,img:womanWrap5,img2:womanWrap55, tittle:"Платок", structure:"Шерсть", price:25, season:"Зима",switch:false},
  ],
 
  womanGloves:[
@@ -169,7 +171,6 @@ const shopReducer =(state=initialState, action)=>{
             case SWITCHON_WOMAN_HATS:
                 return{...state,womanHats:switchON(state.womanHats , action.id) }
 
-            
             case SWITCHON_WOMAN_SCARVES:
 
                 return {...state,womanScarves:switchON(state.womanScarves , action.id)}
@@ -221,12 +222,21 @@ const shopReducer =(state=initialState, action)=>{
                 case DATA_FILTER_FORM :
 
                     return{...state,womanScarves:state.womanScarves.map(item=>{
-                        if(item.price == action.values.price && item.season == action.values.season){
+                        if( item.season === action.values.value && action.values.checked===true){
 
-                            return {...item,filter:true}
+                            return {...item,filter:false}
+                        
                         }
-                        return  {...item,filter:false}
+                        return  {...item,filter:true}
                     })}
+
+
+                    case CLEAR_FILTER_FORM : 
+
+                    
+                           return {...state,womanScarves:state.womanScarves.map(item=>({...item,filter:false}))}
+            
+                   
 
 
                     // case DATA_FILTER_CLEAR:
@@ -289,10 +299,11 @@ const shopReducer =(state=initialState, action)=>{
  export const switchOnWomanScarvesAc =(id)=>({type:SWITCHON_WOMAN_SCARVES ,id})
  export const switchOnWomanWrapAc=(id)=>({type:SWITCH_WOMAN_WRAP, id})
  export const switchOnWomanGlovesAc=(id)=>({type:SWITCH_WOMAN_GLOVES,id})
+ export const clearFilterFormAc =()=>({type:CLEAR_FILTER_FORM})
 
  export const chekedToogleAc =(cheked,structure)=>({type:CHEKEDTOOGLE ,cheked, structure})
 
- export const chekedPriceAc =(values, filter)=>({type:DATA_FILTER_FORM,values ,filter })
+ export const chekedPriceAc =(values)=>({type:DATA_FILTER_FORM,values })
 
  export const chekedSeasonAc =(cheked,season)=>({type:CHEKEDSEASON, cheked, season})
  export const clickFilterAc = ()=>({type:CLICK_FILTER})
