@@ -17,7 +17,7 @@ const Cards =(props)=>{
      
      {(toogleFilter)?
 
-     <FilterSideBar clearFilterFormAc={props.clearFilterFormAc}  chekedPriceAc={props.chekedPriceAc}/> 
+     <FilterSideBar clearFilterFormAc={props.clearFilterFormAc}  dataFormFilter={props.dataFormFilter}/> 
      
      :""}
 

@@ -1,5 +1,4 @@
 .filter-side-bar {
-  border: 2px solid DarkOliveGreen;
   background-color: white;
   width: 350px;
   min-width: 250px;
@@ -47,12 +46,6 @@
   width: 100%;
   text-align: center;
   font-size: 20px;
-  margin-top: 8px;
-}
-
-.hpp {
-  width: 100px;
-  height: 100px;
-  background-color: red;
+  margin-top: 28px;
 }
 /*# sourceMappingURL=filtersidebar.css.map */

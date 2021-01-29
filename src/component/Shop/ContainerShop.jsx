@@ -1,13 +1,21 @@
 import React from "react";
 import { connect } from "react-redux";
-import { chekedPriceAc, chekedSeasonAc, chekedToogleAc, clickFilterAc, switchOnWomanHatsAc, switchOnWomanGlovesAc, switchOnWomanScarvesAc, switchOnWomanWrapAc, clearFilterFormAc } from "../../redux-store/shop-reducer";
+import { dataFilterFormWomanScarvesAc, switchOnWomanHatsAc, switchOnWomanGlovesAc, switchOnWomanScarvesAc, switchOnWomanWrapAc, clearFilterFormAc, dataFilterFormWomanHatsAc, clearFilterFormWomanHatsAc } from "../../redux-store/shop-reducer";
 import Shop from "./Shop";
 // switchOnAc
 
 
 const ContainerShop =(props)=>{
 
-    return <Shop {...props}  clearFilterFormAc={props.clearFilterFormAc} clickFilter={props.clickFilterAc} switchOnWomanGlovesAc={props.switchOnWomanGlovesAc} switchOnWomanWrapAc={props.switchOnWomanWrapAc} switchOnWomanScarvesAc={props.switchOnWomanScarvesAc} switchOnWomanHatsAc={props.switchOnWomanHatsAc} chekedToogleAc={props.chekedToogleAc} chekedPriceAc={props.chekedPriceAc} chekedSeasonAc={props.chekedSeasonAc}/>
+    return <Shop {...props}  clearFilterFormAc={props.clearFilterFormAc} 
+                             clearFilterFormWomanHatsAc ={props.clearFilterFormWomanHatsAc}
+                             switchOnWomanGlovesAc={props.switchOnWomanGlovesAc}
+                             switchOnWomanWrapAc={props.switchOnWomanWrapAc}
+                             switchOnWomanScarvesAc={props.switchOnWomanScarvesAc}
+                             switchOnWomanHatsAc={props.switchOnWomanHatsAc}  
+                             dataFilterFormWomanScarvesAc={props.dataFilterFormWomanScarvesAc}
+                             dataFilterFormWomanHatsAc={props.dataFilterFormWomanHatsAc}
+                              />
 }
 
 
@@ -16,8 +24,7 @@ const mapStateToProps =(state)=>{
 
     return{
 
-            // totalCards:state.shopPage.totalCards,
-            // sizeCards:state.shopPage.sizeCards,
+            
             Navigation:state.shopPage.shopNavigationMass,
             cards:state.shopPage.cards,
             womanHats:state.shopPage.womanHats,
@@ -33,4 +40,13 @@ const mapStateToProps =(state)=>{
 
 
 
-export default connect(mapStateToProps,{clearFilterFormAc,switchOnWomanScarvesAc,clickFilterAc ,switchOnWomanGlovesAc,switchOnWomanWrapAc,chekedToogleAc,switchOnWomanHatsAc,chekedPriceAc,chekedSeasonAc})(ContainerShop)
+export default connect(mapStateToProps,{
+    clearFilterFormAc,
+    clearFilterFormWomanHatsAc,
+    switchOnWomanScarvesAc,
+    switchOnWomanGlovesAc,
+    switchOnWomanWrapAc,
+    switchOnWomanHatsAc,
+    dataFilterFormWomanScarvesAc,
+    dataFilterFormWomanHatsAc
+})(ContainerShop)
