@@ -30,12 +30,18 @@ import womanWrap4 from "../image/models/womanWrap/zara4.jpg"
 import womanWrap44 from "../image/models/womanWrap/zara44.jpg"
 import womanWrap5 from "../image/models/womanWrap/zara5.jpg"
 import womanWrap55 from "../image/models/womanWrap/zara55.jpg"
-
+import womanGloves1 from "../image/models/womanGloves/zara1.jpg"
+import womanGloves11 from "../image/models/womanGloves/zara11.jpg"
+import womanGloves2 from "../image/models/womanGloves/zara2.jpg"
+import womanGloves22 from "../image/models/womanGloves/zara22.jpg"
 
 const SWITCHON_WOMAN_HATS ="SWITCHON_WOMAN_HATS";
  
 const DATA_FILTER_FORM_WOMAN_SCARVES="DATA_FILTER_FORM_WOMAN_SCARVES"
 const DATA_FILTER_FORM_WOMAN_HATS ="DATA_FILTER_FORM_WOMAN_HATS"
+const DATA_FILTER_FORM_WOMAN_WRAP ="DATA_FILTER_FORM_WOMAN_WRAP"
+const DATA_FILTER_FORM_WOMAN_GlOVES ="DATA_FILTER_FORM_WOMAN_GLOVES"
+
 
 const SWITCHON_WOMAN_SCARVES="SWITCHON_WOMAN_SCARVES"
  const SWITCH_WOMAN_WRAP ="SWITCH_WOMAN_WRAP"
@@ -43,6 +49,8 @@ const SWITCHON_WOMAN_SCARVES="SWITCHON_WOMAN_SCARVES"
 
  const CLEAR_FILTER_FORM="CLEAR_FILTER_FORM"
  const CLEAR_FILTER_FORM_WOMAN_HATS ="CLEAR_FILTER_FORM_WOMAN_HATS"
+ const CLEAR_FILTER_FORM_WOMAN_WRAP ="CLEAR_FILTER_FORM_WOMAN_WRAP"
+ const CLEAR_FILTER_FORM_WOMAN_GLOVES ="CLEAR_FILTER_FORM_WOMAN_GLOVES"
 
 const initialState ={
 
@@ -51,60 +59,13 @@ const initialState ={
     dataFilterForm:{
         
     },
-    //  shopNavigationMass :[
-
-    //     {mainTittle:"Мужское",
-    //     tittleFirst:"Головные уборы", 
-    //     tittleSecond:"Перчатки", 
-    //     tittleThird:"Шарфы" ,
-    //     liFirst:"Кепки", 
-    //     liSecond:"Шапки",
-    //     liThird:"Кожа",
-    //     liFourth:"Нитка",
-    //     liFifth:"Кашне",
-    //     lisixth:"Тонкие"
-    // }
-
-    //     ,{mainTittle:"Женское",
-    //      tittleFirst:"Головные уборы",
-    //     tittleSecond:"Перчатки",
-    //     tittleThird:"Шарфы" ,
-    //     liFirst:"Шапки", 
-    //     liSecond:"Шляпы",
-    //     liThird:"Береты",
-    //     liFourth:"Кожа",
-    //     liFifth:"Ткань",
-        
-
-    //     }
-    //     ,{mainTittle:"Детское"
-    //     ,tittleFirst:"Головные уборы"
-    //     , tittleThird:"Шарфы" 
-    //     ,tittleSecond:"Перчатки" 
-    //     , liFirst:"Ткань"
-    //     , liSecond:"Кожа",}
-
-
-    // ],
-
-    // cards:[{id:1,cheked:false, img:womanHead1, img2:womanHead11, tittle:"Шапка белая с подкладкой",structure:" Шерсть 80%/ polisteren20%",color1:"black",color2:"red" ,color3:"wheat",price:25,switch:true, season:"лето"} ,
-    //     {id:2, cheked:false, img:womanHead2,img2:womanHead22 ,tittle:"Шапка белая с подкладкой",structure:"Шерсть 80%/polisteren20%",color1:"black",color2:"red",color3:"wheat",price:25,switch:true,season:"лето"},
-    //     {id:3, cheked:false,img:womanHead3,img2:womanHead33,tittle:"Шапка белая с подкладкой",structure:"Шерсть 80%/ polisteren20%",color1:"black",color2:"red" ,color3:"wheat",price:15,switch:true,season:"лето"},
-    //     {id:4, cheked:false, img:womanHead4,img2:womanHead44,tittle:"Шапка белая с подкладкой",structure:"Шерсть 80%/ polisteren20%",color1:"black",color2:"red", color3:"black",price:15,switch:true,season:"весна"},
-    //     {id:5, cheked:false, img:womanHead5,img2:womanHead55,tittle:"Шапка белая с подкладкой",structure:"Хлопок 80%/ polisteren20%",color1:"red",color2:"red", color3:"black",price:25,switch:true,season:"зима"},
-    //     {id:6, cheked:false, img:womanHead6, img2:womanHead66 ,tittle:"Шапка белая с подкладкой",structure:"Хлопок 80%/ polisteren20%",color1:"red",color2:"wheat", color3:"black",price:15,switch:true,season:"лето"},
-    //     {id:7, cheked:false, img:womanHead7, img2:womanHead77 ,tittle:"Шапка белая с подкладкой",structure:"Шерсть 80%/ polisteren20%",color1:"red",color2:"wheat", color3:"black",price:25,switch:true,season:"лето"},
-    //     {id:8, cheked:false, img:womanHead8, img2:womanHead88 ,tittle:"Шапка белая с подкладкой",structure:"Хлопок 80%/ polisteren20%",color1:"black",color2:"wheat", color3:"black",price:"25р",switch:true,season:"осень"},
-    //     {id:9, cheked:false, img:womanHead9, img2:womanHead99 ,tittle:"Шапка белая с подкладкой",structure:"Шерсть 80%/ polisteren20%",color1:"wheat",color2:"wheat", color3:"black",price:"25р",switch:true,season:"весна"},
-    //     {id:10,cheked:false, img:womanHead10, img2:womanHead1010 ,tittle:"Шапка белая с подкладкой",structure:"Хлопок 80%/ polisteren20%",color1:"wheat",color2:"wheat", color3:"black",price:"25р",switch:true,season:"лето"},
-    //     {id:11,cheked:false, img:womanHead111, img2:womanHead111111 ,tittle:"Шапка белая с подкладкой",structure:"Хлопок 80%/ polisteren20%",color1:"wheat",color2:"wheat" ,color3:"wheat",price:"25р",switch:true,season:"лето"}],
-
+   
     tittleShopPage:{
         
         tittleHats:"Шапки",
         tittleScarves:"Шарфы",
         tittleWrap:"Платки",
-        titleGloves:"Перчатки"
+        tittleGloves:"Перчатки"
 
     },
 
@@ -143,8 +104,8 @@ womanHats:[
  ],
 
  womanGloves:[
-    {id:1,img:womanWrap1,img2:womanWrap11, tittle:"Платок", structure:"Шерсть", price:25, season:"Зима",switch:false},
-
+    {id:1, filter:false,img:womanGloves1 ,img2:womanGloves11, tittle:"Платок", structure:"Шерсть", price:25, season:"Зима",switch:false},
+    {id:2, filter:false,img:womanGloves2 ,img2:womanGloves22, tittle:"Платок", structure:"Шерсть", price:25, season:"Лето",switch:false},
  ]
         
 }
@@ -197,27 +158,28 @@ const shopReducer =(state=initialState, action)=>{
 
             return {...state,womanGloves:switchON(state.womanGloves ,action.id)}
 
-
-
-
- case DATA_FILTER_FORM_WOMAN_SCARVES:
-                   
-
-   return {...state, womanScarves: dataFilter(state.womanScarves , action.values.value , action.values.checked)}
             
- case DATA_FILTER_FORM_WOMAN_HATS:
-
-  return {...state, womanHats: dataFilter(state.womanHats , action.values.value , action.values.checked)}
 
 
-                    // return{...state,womanHats:state.womanHats.map(item=>{
-                    //     if( item.season === action.values.value && action.values.checked===true){
 
-                    //         return {...item,filter:false}
-                        
-                    //     }
-                    //     return  {...item,filter:true}
-                    // })}
+
+
+         case DATA_FILTER_FORM_WOMAN_SCARVES:
+                   
+         return {...state, womanScarves: dataFilter(state.womanScarves , action.values.value , action.values.checked)}
+            
+          case DATA_FILTER_FORM_WOMAN_HATS:
+
+         return {...state, womanHats: dataFilter(state.womanHats , action.values.value , action.values.checked)}
+
+         case DATA_FILTER_FORM_WOMAN_WRAP : 
+
+          return {...state, womanWrap: dataFilter(state.womanWrap , action.values.value , action.values.checked)}
+
+          case DATA_FILTER_FORM_WOMAN_GlOVES:
+
+            return {...state, womanGloves: dataFilter(state.womanGloves , action.values.value , action.values.checked)}
+                    
 
                     case CLEAR_FILTER_FORM : 
 
@@ -227,9 +189,15 @@ const shopReducer =(state=initialState, action)=>{
 
                     return {...state,womanHats:state.womanHats.map(item=>({...item,filter:false}))}
                     
+                    case CLEAR_FILTER_FORM_WOMAN_WRAP:
 
+                    return {...state,womanWrap:state.womanWrap.map(item=>({...item,filter:false}))}
+
+                    case CLEAR_FILTER_FORM_WOMAN_GLOVES:
+
+                    return {...state,womanGloves:state.womanGloves.map(item=>({...item,filter:false}))}
                     
-
+                   
 
                 default: return state
         }
@@ -249,11 +217,14 @@ const shopReducer =(state=initialState, action)=>{
 
  export const clearFilterFormAc =()=>({type:CLEAR_FILTER_FORM})
  export const clearFilterFormWomanHatsAc =()=>({type:CLEAR_FILTER_FORM_WOMAN_HATS})
+ export const clearFilterFormWomanWrapAc =()=>({type:CLEAR_FILTER_FORM_WOMAN_WRAP})
+ export const clearFilterFormWomanGlovesAc =()=>({type:CLEAR_FILTER_FORM_WOMAN_GLOVES})
 
  
  export const dataFilterFormWomanHatsAc =(values)=>({type:DATA_FILTER_FORM_WOMAN_HATS,values })
+ export const dataFilterFormWomanWrapAc =(values)=>({type:DATA_FILTER_FORM_WOMAN_WRAP , values})
  export const dataFilterFormWomanScarvesAc =(values)=>({type:DATA_FILTER_FORM_WOMAN_SCARVES,values })
- 
+ export const dataFilterFormWomanGlovesAc =(values)=>({type:DATA_FILTER_FORM_WOMAN_GlOVES,values })
 
  
  

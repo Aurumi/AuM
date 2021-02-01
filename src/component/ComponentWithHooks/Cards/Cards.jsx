@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 import Filter from "../../Filter/Filter";
 import FilterSideBar from "../../Filter/filterSideBar/filterSidebar";
@@ -8,6 +9,14 @@ import "./cards.css"
 
 
 const Cards =(props)=>{
+
+
+     const handleClick =(dataCard)=>{
+       props.getDataCardAc(dataCard)     // отправляем данные в productPAgeReducer
+        console.log(dataCard)
+
+     }
+
 
      const [toogleFilter, setToogleFilter] = useState(false)
 
@@ -34,13 +43,13 @@ const Cards =(props)=>{
    {props.element.map((element)=>{
         
        if(element.filter===false){
-        return <div onMouseEnter={()=>{props.switchOnAc(element.id)}}  className="Shop-cards__item">
+        return <div  onMouseEnter={()=>{props.switchOnAc(element.id)}}  className="Shop-cards__item">
                                    
-        {(element.switch)?<img src={element.img2} alt=""/>:<img src={element.img} alt=""/>} 
+        {(element.switch)?<NavLink to="/123"><img  onClick={()=>{handleClick(element)}}  src={element.img2} alt=""/></NavLink>:<NavLink to="/123"><img src={element.img} alt=""/></NavLink>} 
          <div className="Shop-cards__text">
-    <p>{element.tittle}</p>
-    <p>{element.structure}</p>
-    <p>{element.price}</p>
+     <p>{element.tittle}</p>
+   <p>{element.structure}</p>
+     <p>{element.price}</p>
          </div> 
         
         
@@ -52,8 +61,24 @@ const Cards =(props)=>{
     })}
    
 
+
+
 </>
 }
+
+
+// const Card =(props)=>{
+//      let element=props.element
+//      return <div onMouseEnter={()=>{props.switchOnAc(element.id)}}  className="Shop-cards__item">
+                                   
+//      {(element.switch)?<img src={element.img2} alt=""/>:<img src={element.img} alt=""/>} 
+//       <div className="Shop-cards__text">
+//  <p>{element.tittle}</p>
+//  <p>{element.structure}</p>
+//  <p>{element.price}</p>
+//       </div> 
+//       </div>
+// }
 
 export default Cards;
 

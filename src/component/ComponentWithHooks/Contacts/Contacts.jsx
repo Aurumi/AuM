@@ -47,7 +47,7 @@ const Contactsss =(props)=>{
 
 <Transition items={people.visible} from={{opacity:0}} enter={{opacity:1}} leave={{opacity:0}} delay="200"
 >
-{(items)=>props=>items&&<div style={props} className ="Contact-item__about">
+{(items)=>props=>items&&<div style={props} className ="Contact- item__about">
     <ul>
         <li>{people.name}</li>
       <li> { people.profession}</li>
