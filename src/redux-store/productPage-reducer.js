@@ -4,7 +4,7 @@ const GET_DATA_CARD= "GET_DATA_CARD"
 let initalState = {
 
 
-    dataCard:null
+    dataCard:""
 
 }
 

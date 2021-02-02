@@ -29,6 +29,9 @@ const Header = (props)=>{
                         <div className="header__element header__element_1"><NavLink to= "/Contacts" > КОНТАКТЫ </NavLink> </div>
                         <div className="header__element header__element_1"><NavLink to= "/Shop" > МАГАЗИН </NavLink> </div>
                         <div className="header__element header__element_1"><NavLink to= "/registration" > РЕГИСТРАЦИЯ </NavLink> </div>
+                        <div className="header__element header__element_1"><NavLink to= "/registration" > РЕГИ</NavLink> </div>
+                        
+                        
                     </div>
                     
                  </nav>

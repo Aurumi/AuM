@@ -86,12 +86,12 @@ womanHats:[
 
  womanScarves:[
 
-    {id:1, filter:false,img:womanScarves1,img2:womanScarves11, tittle:"Шарф", structure:"Шерсть", price:25, season:"Весна",switch:false},
-    {id:2, filter:false,img:womanScarves2,img2:womanScarves22, tittle:"Шарф", structure:"Шерсть", price:15, season:"Весна",switch:false},
-    {id:3, filter:false,img:womanScarves3,img2:womanScarves33, tittle:"Шарф", structure:"Шерсть", price:25, season:"Осень",switch:false},
-    {id:4, filter:false,img:womanScarves4,img2:womanScarves44, tittle:"Шарф", structure:"Шерсть", price:15, season:"Осень",switch:false},
-    {id:5, filter:false,img:womanScarves5,img2:womanScarves55, tittle:"Шарф", structure:"Шерсть", price:25, season:"Зима",switch:false},
-    {id:6, filter:false, img:womanScarves6,img2:womanScarves66, tittle:"Шарф", structure:"Шерсть", price:15, season:"Лето",switch:false},
+    {id:1, filter:false,img:womanScarves1,img2:womanScarves11, color:"Черный", tittle:"Шарф", structure:"Шерсть", price:25, season:"Весна",switch:false},
+    {id:2, filter:false,img:womanScarves2,img2:womanScarves22, color:"Белый",tittle:"Шарф", structure:"Шерсть", price:15, season:"Весна",switch:false},
+    {id:3, filter:false,img:womanScarves3,img2:womanScarves33,  color:"black", tittle:"Шарф", structure:"Шерсть", price:25, season:"Осень",switch:false},
+    {id:4, filter:false,img:womanScarves4,img2:womanScarves44, color:"black",tittle:"Шарф", structure:"Шерсть", price:15, season:"Осень",switch:false},
+    {id:5, filter:false,img:womanScarves5,img2:womanScarves55,color:"black", tittle:"Шарф", structure:"Шерсть", price:25, season:"Зима",switch:false},
+    {id:6, filter:false, img:womanScarves6,img2:womanScarves66, color:"black",tittle:"Шарф", structure:"Шерсть", price:15, season:"Лето",switch:false},
 
  ],
 
