@@ -15,6 +15,7 @@ import Contactsss from "./Contacts/Contacts"
 import Contacts from "./Contacts/ContainerContacts"
 import Shop from "../Shop/ContainerShop"
 import ProductPageContainer from "../ProductPage/ProductPageContainer"
+import BasketPageContainer from "../BasketPage/BasketPageContainer"
 
 
 
@@ -27,6 +28,7 @@ const Bycicle = (props)=>{
          
             <Header/>
             <div> 
+            <Route path="/Basket" render={()=><BasketPageContainer/>}></Route>
             <Route path="/123" render={()=><ProductPageContainer/>}></Route>
               <Route path="/Shop" render={()=><Shop/>}></Route>
               <Route path="/Contacts" render={()=><Contacts/>}></Route>

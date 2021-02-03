@@ -32,7 +32,7 @@ const ProductPage =(props)=>{
         {props.dataCard.color}
         <img src={props.dataCard.img}/>
       </div>
-      <div className={pg.box2_button}>Добавить</div>
+      <div onClick={()=>{props.addProductInBasketAc(props.dataCard.id)}} className={pg.box2_button}>Добавить</div>
 
    
 

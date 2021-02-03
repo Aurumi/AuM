@@ -3,7 +3,8 @@ import "./header.css"
 import logo from "../../image/logo.jpg"
 import { NavLink } from "react-router-dom";
 import Burger from "../ComponentWithHooks/Byrger/Burger";
-
+import BasketContainer from "../Basket/BasketContainer";
+// import basket from "../../image/basketIcon/123.jpg"
 
 
 
@@ -29,8 +30,8 @@ const Header = (props)=>{
                         <div className="header__element header__element_1"><NavLink to= "/Contacts" > КОНТАКТЫ </NavLink> </div>
                         <div className="header__element header__element_1"><NavLink to= "/Shop" > МАГАЗИН </NavLink> </div>
                         <div className="header__element header__element_1"><NavLink to= "/registration" > РЕГИСТРАЦИЯ </NavLink> </div>
-                        <div className="header__element header__element_1"><NavLink to= "/registration" > РЕГИ</NavLink> </div>
-                        
+                        <div className="header__element header__element_1"><NavLink to= "/Basket" > <BasketContainer/>  </NavLink> </div>
+                      
                         
                     </div>
                     
