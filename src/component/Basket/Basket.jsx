@@ -5,8 +5,8 @@ import basket from "../../image/basketIcon/123.jpg"
 
 
 let Basket =(props)=>{
-console.log(props.valueBasket)
-console.log(props.valueBasket.length)
+// console.log(props.valueBasket)
+// console.log(props.valueBasket.length)
     return <div>
 
      <img src={basket}/>

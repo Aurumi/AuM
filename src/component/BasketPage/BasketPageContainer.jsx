@@ -1,21 +1,24 @@
 import React from "react"
 import { connect } from "react-redux"
+import { deleteProductAc } from "../../redux-store/productPage-reducer"
 import BasketPage from "./BasketPage"
 
 
 
 
-let BasketPageContainer =()=>{
+let BasketPageContainer =(props)=>{
 
-    return <BasketPage/>
+    return <BasketPage {...props} deleteProductAc={props.deleteProductAc}/>
+
+    
 }
 
  let mapStateToProps =(state)=>{
 
     return {
 
-        state,
+        valueBasket:state.productPage.valueBasket
     }
 }
 
-export default connect(mapStateToProps,{})(BasketPageContainer)
+export default connect(mapStateToProps,{deleteProductAc})(BasketPageContainer)

@@ -75,11 +75,11 @@ const initialState ={
 
 womanHats:[
     
-               {id:1, filter:false,img:womanHead1,img2:womanHead11, tittle:"Шапка белая", structure:"Шерсть", price:25, season:"Зима",switch:false},
-               {id:2, filter:false,img:womanHead2,img2:womanHead22, tittle:"Шапка белая", structure:"Шерсть", price:23, season:"Осень",switch:false},
-               {id:3, filter:false,img:womanHead3,img2:womanHead33, tittle:"Шапка белая", structure:"Шерсть", price:22, season:"Зима",switch:false},
-               {id:4, filter:false,img:womanHead4,img2:womanHead44, tittle:"Шапка белая", structure:"Шерсть", price:21, season:"Лето",switch:false},
-               {id:5, filter:false,img:womanHead5,img2:womanHead55, tittle:"Шапка белая", structure:"Шерсть", price:24, season:"Зима",switch:false},
+               {id:1, filter:false,img:womanHead1,img2:womanHead11, color:"Черный", tittle:"Шапка белая", structure:"Шерсть", price:25, season:"Зима",switch:false},
+               {id:2, filter:false,img:womanHead2,img2:womanHead22,color:"Черный", tittle:"Шапка белая", structure:"Шерсть", price:23, season:"Осень",switch:false},
+               {id:3, filter:false,img:womanHead3,img2:womanHead33,color:"Черный", tittle:"Шапка белая", structure:"Шерсть", price:22, season:"Зима",switch:false},
+               {id:4, filter:false,img:womanHead4,img2:womanHead44,color:"Черный", tittle:"Шапка белая", structure:"Шерсть", price:21, season:"Лето",switch:false},
+               {id:5, filter:false,img:womanHead5,img2:womanHead55,color:"Черный", tittle:"Шапка белая", structure:"Шерсть", price:24, season:"Зима",switch:false},
                
                  
  ],
@@ -96,16 +96,16 @@ womanHats:[
  ],
 
  womanWrap:[
-    {id:1, filter:false,img:womanWrap1,img2:womanWrap11, tittle:"Платок", structure:"Шерсть", price:25, season:"Зима",switch:false},
-    {id:2, filter:false,img:womanWrap2,img2:womanWrap22, tittle:"Платок", structure:"Шерсть", price:25, season:"Зима",switch:false},
-    {id:3, filter:false,img:womanWrap3,img2:womanWrap33, tittle:"Платок", structure:"Шерсть", price:25, season:"Зима",switch:false},
-    {id:4, filter:false,img:womanWrap4,img2:womanWrap44, tittle:"Платок", structure:"Шерсть", price:25, season:"Зима",switch:false},
-    {id:5, filter:false,img:womanWrap5,img2:womanWrap55, tittle:"Платок", structure:"Шерсть", price:25, season:"Зима",switch:false},
+    {id:1, filter:false,img:womanWrap1,img2:womanWrap11,color:"Черный", tittle:"Платок", structure:"Шерсть", price:25, season:"Зима",switch:false},
+    {id:2, filter:false,img:womanWrap2,img2:womanWrap22,color:"Черный", tittle:"Платок", structure:"Шерсть", price:25, season:"Зима",switch:false},
+    {id:3, filter:false,img:womanWrap3,img2:womanWrap33, color:"Черный",tittle:"Платок", structure:"Шерсть", price:25, season:"Зима",switch:false},
+    {id:4, filter:false,img:womanWrap4,img2:womanWrap44,color:"Черный", tittle:"Платок", structure:"Шерсть", price:25, season:"Зима",switch:false},
+    {id:5, filter:false,img:womanWrap5,img2:womanWrap55,color:"Черный", tittle:"Платок", structure:"Шерсть", price:25, season:"Зима",switch:false},
  ],
 
  womanGloves:[
-    {id:1, filter:false,img:womanGloves1 ,img2:womanGloves11, tittle:"Платок", structure:"Шерсть", price:25, season:"Зима",switch:false},
-    {id:2, filter:false,img:womanGloves2 ,img2:womanGloves22, tittle:"Платок", structure:"Шерсть", price:25, season:"Лето",switch:false},
+    {id:1, filter:false,img:womanGloves1 ,img2:womanGloves11,color:"Черный", tittle:"Платок", structure:"Шерсть", price:25, season:"Зима",switch:false},
+    {id:2, filter:false,img:womanGloves2 ,img2:womanGloves22,color:"Черный", tittle:"Платок", structure:"Шерсть", price:25, season:"Лето",switch:false},
  ]
         
 }

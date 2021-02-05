@@ -3,12 +3,16 @@ const GET_DATA_CARD= "GET_DATA_CARD"
 
 const ADD_PRODUCT_IN_BASKET ="ADD_PRODUCT_IN_BASKET"
 
+const DELETE_PRODUCT_FROM_BASKET="DELETE_PRODUCT_FROM_BASKET"
+
 let initalState = {
 
 
     dataCard:"",
 
-    valueBasket:[]
+    valueBasket:[],
+
+    
 
 }
 
@@ -31,8 +35,14 @@ let productPageReducer =(state=initalState , action)=>{
 
         if({...state,dataCard:{...state.dataCard.id === action.id}}){
 
-            return{...state, valueBasket:[...state.valueBasket,{...state,dataCard:{...state.dataCard}}]}
+            // return{...state, valueBasket:[...state.valueBasket,{...state,dataCard:{...state.dataCard}}]}
+            return{...state, valueBasket:[...state.valueBasket,{...state.dataCard}]}
         }
+
+         case DELETE_PRODUCT_FROM_BASKET: 
+
+             return {...state,valueBasket:state.valueBasket.filter(item=>item.id !== action.id)}
+         
 
 
 
@@ -45,7 +55,7 @@ let productPageReducer =(state=initalState , action)=>{
     
 }
 
-
+export const deleteProductAc =(id)=>({type:DELETE_PRODUCT_FROM_BASKET,id})
 export const addProductInBasketAc = (id)=>({type:ADD_PRODUCT_IN_BASKET,id})
 export const  getDataCardAc =(value)=>({type:GET_DATA_CARD , value})
 
