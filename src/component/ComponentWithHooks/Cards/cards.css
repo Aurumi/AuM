@@ -30,4 +30,9 @@
 .filter-wrapper li {
   display: inline-block;
 }
+
+.Shop-cards__item img {
+  width: 290px;
+  height: 400px;
+}
 /*# sourceMappingURL=cards.css.map */

@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import { connect } from "react-redux"
 import { deleteProductAc } from "../../redux-store/productPage-reducer"
 import BasketPage from "./BasketPage"
@@ -8,7 +8,16 @@ import BasketPage from "./BasketPage"
 
 let BasketPageContainer =(props)=>{
 
-    return <BasketPage {...props} deleteProductAc={props.deleteProductAc}/>
+     let [sum , setSum] = useState(0)
+     let [arrayProduct,setSarrayProduct] =useState(props.valueBasket)
+
+        for(var obj in arrayProduct ){  
+
+        sum +=arrayProduct[obj].price
+    }
+
+
+    return <BasketPage {...props} sum={sum} deleteProductAc={props.deleteProductAc}/>
 
     
 }

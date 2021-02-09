@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,oBAAoB,CAAA;EAChB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,KAAK;EAEjB,gBAAgB,EAAE,GAAG;CACpB;;AAGD,AAAA,8BAA8B,CAAA;EAC1B,MAAM,EAAE,MAAM;EAEd,SAAS,EAAE,MAAM;CAOpB",
+    "sources": [
+        "basketPage.scss"
+    ],
+    "names": [],
+    "file": "basketPage.css"
+}

@@ -1,61 +1,70 @@
-import React from "react";
-import bskp from "./basketPage.module.css"
+import React, { useState } from "react";
 
+import "./basketPage.css"
 
 
 let BasketPage =(props)=>{
 
-    console.log(props.valueBasket)
 
- let arr=props.valueBasket
-let sum = 0
-    for(var obj in arr ){
+
+   let arr=props.valueBasket
+   let sum = 0
+    for(var obj in arr ){  
 
         sum +=arr[obj].price
     }
+
+
+    
+return <div className="Basket-Page-Wrapper">
+
+
+<div className="Basket-Page-Wrapper-container">
+
+
+<div className="Basket-Page-tittle">Корзина</div>
+
+
+<div className="Basket-Page-section-left">
+
+{props.valueBasket.map(product=>{
+
+  return <div key={product.id} className="Basket-Page-product">
+        
+        <div className="Basket-Page-product_image">
+            <img src={product.img}/>
+        </div>
+        <div className="Basket-Page-product_infoProduct">
+             
+             <div className="Basket-Page-product_tittle">{product.tittle}</div>
+             <div className="Basket-Page-product_price">{product.price} б.руб</div>
+             <div className="Basket-Page-color">{product.color}</div>
+            
+        </div>
+        <div onClick={()=>{props.deleteProductAc(product.id)}} className="crossClose"></div>
+    </div>
+  
+
+})}
     
 
-    return <div className={bskp.Wrapper}>
+</div>
+<div className="Basket-Page-section-right">
 
-<div className={bskp.container}>
-       <div className={bskp.tittle}>Корзина</div>
-          <div className={bskp.gridBox}>
+<div className="Product-summ">
 
-              <div className={bskp.gridBoxLeft}>
-                    
-                {props.valueBasket.map((item)=>{
+Итого к оплате : {sum} б.руб
 
-                    return <>
-                         
-                        <div  key={item.id} className={bskp.flexBoxGorizont}>
-                  <div className={bskp.gridBoxLeft_sectionImage}><img src={item.img }/></div>   
+</div>
 
-                       
-                  <div className={bskp.gridBoxLeft_sectionInfo}>
-                      
-                      
-                      <div>{item.tittle}</div>
-                      <div>{item.price}</div>
-                      <div>{item.color}</div>
-                      
-                      
-                      </div>   
-                      <div onClick={()=>{props.deleteProductAc(item.id)}} className={bskp.crossClose}></div>      
-                  </div>
-            
-                    </>
-                })} 
+</div>
+</div>
 
-               
 
-               
 
-              </div>
-              <div className={bskp.gridBoxRight}>Итого:{sum} б.руб</div>
-                
-          </div>
-       </div>
-    </div>
+
+</div>
+
 }
 
 
