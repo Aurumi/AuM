@@ -8,16 +8,14 @@ import BasketPage from "./BasketPage"
 
 let BasketPageContainer =(props)=>{
 
-     let [sum , setSum] = useState(0)
-     let [arrayProduct,setSarrayProduct] =useState(props.valueBasket)
+    let arr=props.valueBasket
+    let sum = 0
+     for(var obj in arr ){  
+ 
+         sum +=arr[obj].price
+     }
 
-        for(var obj in arrayProduct ){  
-
-        sum +=arrayProduct[obj].price
-    }
-
-
-    return <BasketPage {...props} sum={sum} deleteProductAc={props.deleteProductAc}/>
+    return <BasketPage {...props} sum={sum}  deleteProductAc={props.deleteProductAc}/>
 
     
 }

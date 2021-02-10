@@ -6,16 +6,6 @@ import "./basketPage.css"
 let BasketPage =(props)=>{
 
 
-
-   let arr=props.valueBasket
-   let sum = 0
-    for(var obj in arr ){  
-
-        sum +=arr[obj].price
-    }
-
-
-    
 return <div className="Basket-Page-Wrapper">
 
 
@@ -51,12 +41,17 @@ return <div className="Basket-Page-Wrapper">
 </div>
 <div className="Basket-Page-section-right">
 
-<div className="Product-summ">
+<div className="Basket-Page-section-right_ProductSumm">
 
-Итого к оплате : {sum} б.руб
+Итого к оплате : {props.sum} б.руб
 
 </div>
-
+ 
+ <div className="Basket-Page-section-right_chekoutButtonss">
+<form>
+<button disabled={(props.sum === 0)? true: false} type="submit" >Оформить заказ</button>
+</form>
+</div>
 </div>
 </div>
 

@@ -3,7 +3,9 @@
   height: 100%;
   display: grid;
   grid-template: auto 1fr auto/auto;
-  grid-template-areas: "aboutHeader" "aboutMain"  "aboutOurPeople";
+  grid-template-areas: "aboutHeader"
+ "aboutMain" 
+ "aboutOurPeople";
 }
 
 .aboutHeader {

@@ -19,7 +19,7 @@ const ShopNavigation =()=>{
             </ul>
            </li>
 
-           <li>
+           {/* <li>
               <span className="Shop-navigation-tittle" >Мужское</span>
               <ul>
                 <li>Шапки</li>
@@ -27,8 +27,8 @@ const ShopNavigation =()=>{
                 <li>Платки</li>
                 <li>Перчатки</li>
             </ul>
-           </li>
-           <li>
+           </li> */}
+           {/* <li>
               <span className="Shop-navigation-tittle" >Детское</span>
               <ul>
                 <li>Шапки</li>
@@ -36,7 +36,7 @@ const ShopNavigation =()=>{
                 <li>Платки</li>
                 <li>Перчатки</li>
             </ul>
-           </li>
+           </li> */}
        </ul>
 
     </div>
