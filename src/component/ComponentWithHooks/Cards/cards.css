@@ -1,5 +1,6 @@
 .Shop-cards__item {
   flex: 0 1 25%;
+  padding: 0 5px;
 }
 
 .Shop-cards__item .Shop-cards__text {
